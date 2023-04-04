@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+h1 {
+    color: black;
+    font-size: 5rem;
+}
+@mixin center_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_header {
+    @include center_flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+
+    &:hover {
+        background-color: red;
+    }
+}
+
+p {
+    font-size: 2rem;
+}
